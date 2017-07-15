@@ -1,5 +1,6 @@
 # Socket_demo
-socket基本使用
+socket基本使用  
+
 ###1、TCP/IP
 TCP/IP就是传输控制协议/网间协议，网络层的“ip地址”可以唯一标识网络中的主机，而传输层的“协议+端口”可以唯一标识主机中的应用程序（进程）  
 下面说一下IP地址和端口号
@@ -67,5 +68,5 @@ fd:socket描述字
 buf：缓冲区  
 count：缓冲区长度
 
-	int close(int fd);
+int close(int fd);
 socket标记为以关闭 ，使相应socket描述字的引用计数-1，当引用计数为0的时候，触发TCP客户端向服务器发送终止连接请求。
